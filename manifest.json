@@ -1,0 +1,38 @@
+{
+  "id": "eclipse",
+  "name": "Eclipse Addons",
+  "version": "0.2.0",
+  "author": "Viboplr",
+  "description": "Use Eclipse Music addons you add yourself as a fallback playback source, a downloader, and a search in Cmd+K. Paste an addon's manifest URL, test it, and put it in your order: a track nothing else can play is looked up on your addons, first enabled one wins.",
+  "minAppVersion": "1.0.113",
+  "runtime": "worker",
+  "stability": "experimental",
+  "homepage": "https://github.com/outcast1000/viboplr-eclipse",
+  "updateUrl": "https://github.com/outcast1000/viboplr-eclipse/releases/latest/download/update.json",
+  "icon": "M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z",
+  "permissions": [
+    "network:*"
+  ],
+  "permissionReasons": {
+    "network:*": "Talk to the Eclipse addons you add, which can be on any host"
+  },
+  "contributes": {
+    "streamResolvers": [
+      {
+        "id": "eclipse",
+        "name": "Eclipse addons"
+      }
+    ],
+    "downloadProviders": [
+      {
+        "id": "eclipse",
+        "name": "Eclipse addons"
+      }
+    ],
+    "settingsPanel": {
+      "id": "eclipse-settings",
+      "label": "Eclipse addons",
+      "order": 50
+    }
+  }
+}

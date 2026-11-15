@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "viboplr-eclipse-tests",
+  "description": "Test harness for the viboplr-eclipse plugin (not published; the plugin itself is just index.js + manifest.json).",
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.cjs",
+    "package": "scripts/package.sh",
+    "fake-addon": "node scripts/fake-addon.cjs"
+  }
+}
